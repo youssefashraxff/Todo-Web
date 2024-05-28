@@ -9,6 +9,8 @@ def add_todo():
     setTodos(todos)
    
 st.title("Todoie")
+st.write("Increase you <b>productivity</b>.",
+          unsafe_allow_html=True)
 
 for i,todo in enumerate(todos):
     checkbox = st.checkbox(todo,key=todo)
